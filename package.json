@@ -1,0 +1,43 @@
+{
+  "name": "bb32",
+  "version": "0.0.0",
+  "description": "Base32 for javascript",
+  "keywords": [
+    "base32"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/bcoin-org/bb32.git",
+  "homepage": "https://github.com/bcoin-org/bb32",
+  "bugs": {
+    "url": "https://github.com/bcoin-org/bb32/issues"
+  },
+  "author": "Christopher Jeffrey <chjjeffrey@gmail.com>",
+  "main": "./lib/bb32.js",
+  "scripts": {
+    "browserify": "browserify -s bb32 lib/bb32.js | uglifyjs -c > bb32.js",
+    "clean": "rm -f bb32.js",
+    "lint": "eslint lib/ test/ || exit 0",
+    "test": "mocha --reporter spec test/*-test.js",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "babelify": "^8.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browserify": "^14.5.0",
+    "eslint": "^4.14.0",
+    "mocha": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "uglify-es": "^3.1.3",
+    "webpack": "^3.10.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
