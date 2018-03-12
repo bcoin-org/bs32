@@ -1,11 +1,11 @@
-# bb32
+# bs32
 
 Base32 for javascript.
 
 ## Usage
 
 ``` js
-const base32 = require('bb32');
+const base32 = require('bs32');
 ```
 
 ## Contribution and License Agreement

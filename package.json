@@ -1,21 +1,21 @@
 {
-  "name": "bb32",
+  "name": "bs32",
   "version": "0.0.0",
   "description": "Base32 for javascript",
   "keywords": [
     "base32"
   ],
   "license": "MIT",
-  "repository": "git://github.com/bcoin-org/bb32.git",
-  "homepage": "https://github.com/bcoin-org/bb32",
+  "repository": "git://github.com/bcoin-org/bs32.git",
+  "homepage": "https://github.com/bcoin-org/bs32",
   "bugs": {
-    "url": "https://github.com/bcoin-org/bb32/issues"
+    "url": "https://github.com/bcoin-org/bs32/issues"
   },
   "author": "Christopher Jeffrey <chjjeffrey@gmail.com>",
-  "main": "./lib/bb32.js",
+  "main": "./lib/bs32.js",
   "scripts": {
-    "browserify": "browserify -s bb32 lib/bb32.js | uglifyjs -c > bb32.js",
-    "clean": "rm -f bb32.js",
+    "browserify": "browserify -s bs32 lib/bs32.js | uglifyjs -c > bs32.js",
+    "clean": "rm -f bs32.js",
     "lint": "eslint lib/ test/ || exit 0",
     "test": "mocha --reporter spec test/*-test.js",
     "webpack": "webpack --config webpack.config.js"
