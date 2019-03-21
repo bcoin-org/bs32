@@ -3,7 +3,7 @@
 
 'use strict';
 
-const assert = require('./util/assert');
+const assert = require('bsert');
 const bs32 = require('../');
 
 // https://tools.ietf.org/html/rfc4648#section-10
