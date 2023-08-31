@@ -1,6 +1,6 @@
 {
   "name": "bs32",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Base32 for javascript",
   "keywords": [
     "base32"
